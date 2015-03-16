@@ -1,0 +1,614 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    padding-bottom: 50px;
+}
+.main {
+    background-color: #00539F;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+
+}
+
+#tabzilla-panel{
+font-size: .89em;
+}
+
+#upcoming-events{
+    background:#f6f4ec;
+}
+
+#upcoming-events .container{
+    position:relative;
+    padding:60px 0 40px 0;
+    text-align:center
+}
+
+#upcoming-events .container h2{
+    font-size:54px;
+    font-size:3.375rem;
+    color:#484848;
+    text-align:center;
+    margin-bottom:80px;
+    letter-spacing:-1px
+}
+
+#upcoming-events .container h4{
+    font-family:'Open Sans',X-LocaleSpecific,sans-serif
+}
+
+#upcoming-events .inner-container{
+    zoom:1;
+    margin-bottom:20px
+}
+
+#upcoming-events .inner-container:after{
+    display:block;
+    visibility:hidden;
+    height:0;
+    clear:both;
+    content:"."
+}
+
+#upcoming-events .date-large{
+    display:block;
+    float:left;
+    margin:0 20px 0 0;
+    zoom:1
+}
+
+#upcoming-events .date-large:after{
+    display:block;
+    visibility:hidden;
+    height:0;
+    clear:both;
+    content:"."
+}
+
+#upcoming-events .date-large time{
+    display:block;
+    width:170px;
+    height:170px;
+    background:#337ab7;
+    border:5px solid #337ab7;
+    color:#fff;
+    text-align:center;
+    line-height:1.1;
+    border-radius:100%;
+    font-family:'Open Sans Light',X-LocaleSpecific-Light,'Open Sans',X-LocaleSpecific,sans-serif;
+    font-weight:normal;
+    -webkit-transition:background .1s ease-in-out;
+    transition:background .1s ease-in-out
+}
+
+#upcoming-events .date-large time .date-month{
+    display:block;
+    font-size:32px;
+    padding-top:45px
+}
+
+#upcoming-events .date-large time .date-day{
+    display:block;
+    font-size:44px;
+    font-size:2.75rem
+}
+
+#upcoming-events .date-large:hover time,#upcoming-events .date-large:focus time{
+    background:#337ab7;
+}
+
+#upcoming-events .event-info:before{
+    display:inline-block;
+    font-family:'FA-Icons-Home';
+    width:1.5em;
+    text-align:center;
+    color:#b1b1ad
+}
+
+#upcoming-events .event-info.location{
+    display:block;
+    position:relative;
+    margin-top:5px;
+    zoom:1
+}
+
+#upcoming-events .event-info.location:after{
+    display:block;
+    visibility:hidden;
+    height:0;
+    clear:both;
+    content:"."
+}
+
+#upcoming-events .event-info.location:before{
+    position:absolute;
+    top:0;
+    left:0;
+    content:'\f041\00a0'
+}
+
+#upcoming-events .event-info.location p{
+    float:left;
+    margin:0 0 0 20px
+}
+
+#upcoming-events time.event-info:before{
+    content:'\f073\00a0'
+}
+
+#upcoming-events .featured-event{
+    display:block;
+    width:100%;
+    margin-right:0;
+    text-align:left;
+    zoom:1;
+}
+
+#upcoming-events .featured-event:after{
+    display:block;
+    visibility:hidden;
+    height:0;
+    clear:both;
+    content:"."
+}
+
+#upcoming-events .featured-event .event-detail{
+    float:left;
+    width:740px;
+}
+
+#upcoming-events .featured-event .event-detail a{
+    display:block
+}
+
+#upcoming-events .featured-event .event-detail h3.next{
+    color:#c13832;
+    font-size:16px;
+    font-size:1rem;
+    font-style:italic
+}
+
+#upcoming-events .featured-event .event-detail h3.next:after{
+    content:':'
+}
+
+#upcoming-events .featured-event .event-detail h4{
+    font-size: 24px;
+    color:#565a5c;
+    line-height:1.2
+}
+
+#upcoming-events .featured-event .event-detail time,#upcoming-events .featured-event .event-detail p{
+    font-family:'Open Sans Light',X-LocaleSpecific-Light,'Open Sans',X-LocaleSpecific,sans-serif;
+    font-weight:normal;
+    color:#b1b1ad;
+    font-size: 18px;
+
+}
+
+#upcoming-events .featured-event .event-detail .event-info.location:before{
+    font-size:20px;
+    font-size:1.25rem
+}
+
+#upcoming-events .featured-event .event-detail .event-info.location p{
+    margin-left:29px;
+}
+
+#upcoming-events .featured-event a:hover,#upcoming-events .featured-event a:active,#upcoming-events .featured-event a:focus{
+    text-decoration:none
+}
+
+#upcoming-events .featured-event a:hover h4,#upcoming-events .featured-event a:active h4,#upcoming-events .featured-event a:focus h4{
+    text-decoration:underline
+}
+
+#upcoming-events .events-list{
+    list-style-type:none;
+    width:60%;
+    margin:40px auto 0 auto;
+    padding:0;
+    text-align:left
+}
+
+#upcoming-events .events-list li{
+    margin:0;
+    padding:0
+}
+
+#upcoming-events .events-list li time{
+    display:block;
+    float:left;
+    width:50px;
+    height:40px;
+    padding:10px 5px;
+    border:2px solid #337ab7;
+    color:#565a5c;
+    text-align:center;
+    line-height:1.1;
+    border-radius:100%;
+    font-family:'Open Sans Light',X-LocaleSpecific-Light,'Open Sans',X-LocaleSpecific,sans-serif;
+    font-weight:normal
+}
+
+#upcoming-events .events-list li time .date-month{
+    display:block;
+    font-size: 18px;
+}
+
+#upcoming-events .events-list li time .date-day{
+    display:block;
+    font-size: 18px;
+}
+#upcoming-events .events-list li time {
+    width:70px; 
+    height:70px;
+}
+
+#upcoming-events .events-list li a{
+    display:block;
+    position:relative;
+    margin-bottom:20px;
+    zoom:1
+}
+
+#upcoming-events .events-list li a:after{
+    display:block;
+    visibility:hidden;
+    height:0;
+    clear:both;
+    content:"."
+}
+
+#upcoming-events .events-list li a:hover,#upcoming-events .events-list li a:active,#upcoming-events .events-list li a:focus{
+    text-decoration:none
+}
+
+#upcoming-events .events-list li a:hover h3,#upcoming-events .events-list li a:active h3,#upcoming-events .events-list li a:focus h3{
+    text-decoration:underline
+}
+
+#upcoming-events .events-list .event-detail{
+    padding:0 20px 0 80px;
+    margin:0
+}
+
+#upcoming-events .events-list .event-detail h3{
+    display:block;
+    margin:0;
+    padding:0;
+    color:#565a5c;
+    line-height:1.1;
+    font-size: 20px;
+}
+#upcoming-events .events-list .event-detail  h4{
+    color:#585858;
+    font-size:25px;
+}
+
+#upcoming-events .events-list .event-detail p{
+    color:#b1b1ad;
+    font-size: 17px;
+}
+
+.html-rtl #upcoming-events .featured-event{
+    text-align:right;
+    margin-left:40px;
+    margin-right:0
+}
+
+.html-rtl #upcoming-events .featured-event .date-large{
+    float:right;
+    margin:0 0 0 20px
+}
+
+.html-rtl #upcoming-events .featured-event .event-detail{
+    float:right
+}
+
+.html-rtl #upcoming-events .featured-event .event-info.location p{
+    margin-left:0;
+    margin-right:29px
+}
+
+.html-rtl #upcoming-events .events-list{
+    text-align:right
+}
+
+.html-rtl #upcoming-events .events-list .event-detail{
+    padding:0 80px 0 20px
+}
+
+.html-rtl #upcoming-events .events-list li time{
+    float:right;
+}
+
+.html-rtl #upcoming-events .event-info.location:before{
+    left:auto;
+    right:0
+}
+
+.html-rtl #upcoming-events .event-info.location p{
+    float:right;
+    margin-left:0;
+    margin-right:20px
+}
+
+
+.main-date {
+    font-size: 30px;
+}
+
+.btns{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+}
+
+@media only screen and (min-width:1300px){.module .container,.main-header .container{width:1260px}
+#upcoming-events .featured-event{float:left;width:760px;margin-right:40px}
+#upcoming-events .featured-event .event-detail{width:560px}
+#upcoming-events .events-list{float:left;width:460px;margin:0}
+.html-rtl #upcoming-events .featured-event{float:right}
+.html-rtl #upcoming-events .events-list{float:right}}
+@media only screen and (min-width:1140px) and (max-width:1299px){.module .container,.main-header .container{width:1100px}
+#upcoming-events .featured-event{float:left;width:670px}
+#upcoming-events .featured-event .event-detail{width:400px}
+#upcoming-events .events-list{float:left;width:390px;margin:0}
+.html-rtl #upcoming-events .featured-event{float:right}
+.html-rtl #upcoming-events .events-list{float:right}}
+
+@media only screen and (min-width:820px) and (max-width:979px){#masthead{padding:0}
+#upcoming-events .featured-event{width:100%;margin-right:0}
+#upcoming-events .featured-event .event-detail{width:580px}
+#upcoming-events .events-list{width:70%;margin-top:40px}}
+
+
+@media only screen and (max-width:499px){#masthead{padding:0}
+#upcoming-events .container h2{font-size:42px;font-size:2.625rem;margin-bottom:40px}
+#upcoming-events .featured-event{width:100%;margin-right:0}
+#upcoming-events .featured-event .date-large{display:none}
+#upcoming-events .featured-event .event-detail{width:100%;float:none;margin-top:20px}
+#upcoming-events .featured-event .event-detail h4{font-size:20px;padding-left: 10px;}
+#upcoming-events .featured-event .event-detail time,#upcoming-events .featured-event .event-detail p{font-size:18px;padding-left: 10px;}
+#upcoming-events .events-list{width:100%;margin-top:40px;padding-left: 10px;}
+#upcoming-events .all-events{width:auto}}
+
+
+
