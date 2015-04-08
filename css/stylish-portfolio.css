@@ -253,13 +253,17 @@ footer {
 font-size: .89em;
 }
 
+#tabzilla-panel #tabzilla-nav h2 {
+
+  font-size: 1em;
+}
 #upcoming-events{
     background:#f6f4ec;
 }
 
 #upcoming-events .container{
     position:relative;
-    padding:60px 0 40px 0;
+    
     text-align:center
 }
 
@@ -328,34 +332,6 @@ font-size: .89em;
     font-size: 30px;
 }
 
-@media only screen and (min-width:1300px){.module .container,.main-header .container{width:1260px}
-#upcoming-events .featured-event{float:left;width:760px;margin-right:40px}
-#upcoming-events .featured-event .event-detail{width:560px}
-#upcoming-events .events-list{float:left;width:460px;margin:0}
-.html-rtl #upcoming-events .featured-event{float:right}
-.html-rtl #upcoming-events .events-list{float:right}}
-@media only screen and (min-width:1140px) and (max-width:1299px){.module .container,.main-header .container{width:1100px}
-#upcoming-events .featured-event{float:left;width:670px}
-#upcoming-events .featured-event .event-detail{width:400px}
-#upcoming-events .events-list{float:left;width:390px;margin:0}
-.html-rtl #upcoming-events .featured-event{float:right}
-.html-rtl #upcoming-events .events-list{float:right}}
-
-@media only screen and (min-width:820px) and (max-width:979px){#masthead{padding:0}
-#upcoming-events .featured-event{width:100%;margin-right:0}
-#upcoming-events .featured-event .event-detail{width:580px}
-#upcoming-events .events-list{width:70%;margin-top:40px}}
-
-
-@media only screen and (max-width:499px){#masthead{padding:0}
-#upcoming-events .container h2{font-size:42px;font-size:2.625rem;margin-bottom:40px}
-#upcoming-events .featured-event{width:100%;margin-right:0}
-#upcoming-events .featured-event .date-large{display:none}
-#upcoming-events .featured-event .event-detail{width:100%;float:none;margin-top:20px}
-#upcoming-events .featured-event .event-detail h4{font-size:20px;padding-left: 10px;}
-#upcoming-events .featured-event .event-detail time,#upcoming-events .featured-event .event-detail p{font-size:18px;padding-left: 10px;}
-#upcoming-events .events-list{width:100%;margin-top:40px;padding-left: 10px;}
-#upcoming-events .all-events{width:auto}}
-
-
-
+.well a{
+    float: right
+}
