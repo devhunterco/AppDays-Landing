@@ -335,3 +335,35 @@ font-size: .89em;
 .well a{
     float: right
 }
+
+.services .inicio{
+    margin-bottom: 1.5em;
+}
+
+.profile{
+    
+}
+    .profile img{
+        vertical-align: top;
+    }
+
+    .profile article{
+        margin-top: 0.5em;
+        display: inline-block;
+        text-align: left;
+        font-size: 1.5em;
+    }
+
+    .profile article .name{
+        font-style: italic;
+        font-weight: bolder;
+        margin-bottom: 0;
+    }
+
+    .profile article .city{
+        font-size: 0.8em;
+    }
+
+.mentor .row{
+    padding-bottom: 1.3em;
+}
